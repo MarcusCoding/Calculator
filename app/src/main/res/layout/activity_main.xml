@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="   Ergebnis   "
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/lbl_Answer"
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:text="Ergebnis der Berechnung"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="   Berechnung   "
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:id="@+id/lbl_Numbers"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:text="Rechenweg der Ergebnisse"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="   Operatoren   "
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_PlusAction"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <Button
+                        android:id="@+id/btn_MinusAction"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+                    <Button
+                        android:id="@+id/btn_MultiAction"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="*"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <Button
+                        android:id="@+id/btn_DiviAction"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=":"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="   Funktionen   "
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_Generate"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/btn_new" />
+
+                    <Button
+                        android:id="@+id/btn_Reset"
+                        android:layout_width="320dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:text="@string/btn_reset" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
